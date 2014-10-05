@@ -28,7 +28,16 @@ int getLine (char s[], int lim) {
 	return i;
 }
 
-int trim(char input[], char[] output) {
 
+int trim(char input[]) {
+    int end = 0, i;
+    for (i = 0; i < MAXLINE; ++i) {
+        if (line[i] != '\n') {
+            end = i;    
+        }   
+    }   
+
+    int lastValid = 0;
+    for (i = end; i >= 0 ; --i) {
+    }   
 }
-
